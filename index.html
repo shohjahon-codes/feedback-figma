@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Product FeedBack</title>
+</head>
+
+<body class="flex max-w-[1440px] w-full mx-auto py-5 px-4 justify-center gap-4 bg-gray-200">
+    <div class="modal   fixed "></div>
+    <nav class="w-1/5">
+        <div class="bg-gradient-to-tr text-white font-medium p-3 rounded-md pt-16  from-blue-500 to-pink-500">
+            <h1>Frontend Mentor
+            </h1>
+            <p class="text-xs text-gray-300">Feedback Board</p>
+        </div>
+        <div class="bg-white rounded-md p-5 category flex flex-wrap gap-3 mt-5 px-4">
+
+        </div>
+        <div class="flex flex-col gap-4  bg-white rounded-md mt-5 p-5">
+            <div class="flex justify-between  w-full mt-5 items-center">
+                <h1 class="text-[rgba(58,67,116,1)] font-bold">Roadmap</h1>
+                <p class="underline text-blue-500 text-xs font-semibold">View</p>
+            </div>
+            <ul class="flex flex-col gap-4">
+                <li class="flex items-center justify-between">
+                    <p class="flex items-center justify-center gap-1"><span
+                            class="bg-orange-400 rounded-full py-[4px] px-[4px]"></span><span
+                            class="font-semibold text-gray-500">Planned</span></p> <span
+                        class="font-bold text-gray-500">2</span>
+                </li>
+                <li class="flex items-center justify-between">
+                    <p class="flex items-center justify-center gap-1"><span
+                            class="bg-pink-600 rounded-full py-[4px] px-[4px]"></span><span
+                            class="font-semibold text-gray-500">In-Progress</span></p> <span
+                        class="font-bold text-gray-500">3</span>
+                </li>
+                <li class="flex items-center justify-between">
+                    <p class="flex items-center justify-center gap-1"><span
+                            class="bg-blue-400 rounded-full py-[4px] px-[4px]"></span><span
+                            class="font-semibold text-gray-500">Live</span></p> <span
+                        class="font-bold text-gray-500">1</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="w-4/5">
+        <header class="bg-[rgba(55,63,104,1)] flex justify-between items-center px-4 py-2 rounded-md">
+            <nav class="flex justify-center items-center gap-4 py-5">
+                <div class="flex text-white gap-3">
+                    <img src="./imagies/logo.png" alt="">
+                    <h1 class="font-medium">6 Suggestions</h1>
+                </div>
+                <select class="bg-inherit text-white outline-none">
+                    <option class="text-black bg-transparent outline-none" value="" hidden>Sort by : <span
+                            class="font-">Most Upvotes</span></option>
+                    <option class="text-black bg-transparent outline-none" value="">Sort 2</option>
+                </select>
+            </nav>
+            <button class="bg-[rgba(173,31,234,1)] openModal py-4 px-6 text-white rounded-md font-medium">+ Add
+                Feedback</button>
+        </header>
+        <section class="root  mt-5 h-[80vh] overflow-y-scroll flex flex-col gap-4">
+            <div
+                class="w-full mx-auto text-center gap-4 h-full flex rounded-md justify-center items-center flex-col bg-white ">
+                <img src="./imagies/loading.png" alt="">
+                <h1 class="w-1/2">Got a suggestion? Found a bug that needs to be squashed? We love hearing about new
+                    ideas to improve our app.</h1>
+                <button class="bg-[rgba(173,31,234,1)] py-4 px-6 text-white rounded-md font-medium">+ Add
+                    Feedback</button>
+
+            </div>
+        </section>
+    </main>
+    <script src="./app.js"></script>
+</body>
+
+</html>
