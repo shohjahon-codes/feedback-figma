@@ -5,32 +5,6 @@ const modal = document.querySelector(".modal")
 const openModal = document.querySelector(".openModal")
 
 
-// openModal.addEventListener("click",()=>{
-//     modal.innerHTML = `
-//     <div class="w-full h-full flex justify-center items-center fixed z-50 top-0 left-0 bg-[rgba(0,0,0,0.4)]">
-//         <div class="w-[540px] relative h-[650px] bg-white p-4 py-14">
-//         <p class="text-3xl absolute w-[40px] text-white flex justify-center items-center h-[40px] -top-5 left-5 bg-gradient-to-tr from-blue-500 to-red-500 rounded-full"><span class="text-white pb-2 font-bold">+</span></p>
-//         <h1 class="text-gray-800 text-2xl font-bold">Create New Feedback</h1>
-//            <div class="flex flex-col w-full gap-2" >
-//            <h3 class="text-gray-800">Feedback Title</h3>
-//            <p class="text-gray-400">Add a short, descriptive headline</p>
-//            <input type="text" class="bg-gray-200 py-4 px-4  outline-none" name="" id="" placeholder="Enter your title" >
-//            </div>
-//            <div>
-//            <h3 class="text-gray-800"> Category</h3>
-//            <p class="text-gray-400">Choose a category for your feedback</p>
-            
-// <select name="" id="" class="w-full bg-gray-200 py-4>
-// <option value="feature">Feature</option>
-// <option value="enhancement">Enhancement</option>
-// <option value="bugs">Bugs</option>
-
-// </select>
-//            </div>
-//         </div>
-//     </div>
-//     `
-// })
 
 async function getData(path) {
     if (path) {
